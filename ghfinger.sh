@@ -1,5 +1,10 @@
 #!/bin/sh
 
+if [ -z "$1" ]; then
+    echo "usage: $0 <github-user-name>"
+    exit 1
+fi
+
 NAME="$1"
 
 curl_default() {
@@ -16,3 +21,5 @@ curl_default "https://raw.github.com/$NAME/ghfinger/master/.plan" "No .plan file
 
 echo ".project file"
 curl_default "https://raw.github.com/$NAME/ghfinger/master/.project" "No .project file"
+
+exit 0
