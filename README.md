@@ -1,6 +1,8 @@
 Github Finger POC
 =================
 
+[![GuardRails badge](https://badges.production.guardrails.io/moul/ghfinger-poc.svg)](https://www.guardrails.io)
+
 ```
 # ./ghfinger.sh moul
 github info
